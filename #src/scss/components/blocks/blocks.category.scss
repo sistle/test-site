@@ -1,0 +1,17 @@
+.category{
+
+	margin-bottom: rem(20);
+	&__link{
+		padding: rem(10) 0;
+		text-decoration: underline;
+				color: #c2c2c2;
+						@include interactive-effects(#c2c2c2, "color");
+		&.active {
+			
+				text-decoration: none;
+				color: #858282;
+			
+			}
+	}
+
+}

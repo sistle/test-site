@@ -1,0 +1,25 @@
+//<BUTTONS >====================================================================================================
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-appearance: none;
+	text-align: center;
+
+	font-family: inherit;
+
+	outline: none;
+	padding: rem(16) rem(15);
+	border-radius: 5px;
+	line-height: 1;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+
+
+	@include button(#777777, #fff);
+
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+//</BUTTONS>====================================================================================================

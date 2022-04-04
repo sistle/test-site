@@ -1,0 +1,23 @@
+[class^="icon__"],
+[class*=" icon__"] {
+	&:before {
+		@extend %icons;
+		display: block;
+	}
+}
+
+.icon__arrow-right:before {
+	content: "\e901";
+}
+
+.icon__arrow-left:before {
+	content: "\e902";
+}
+
+.icon__basket:before {
+	content: "\e900";
+}
+
+.icon__logo:before {
+	content: "\e903";
+}

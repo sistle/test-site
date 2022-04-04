@@ -1,0 +1,43 @@
+
+.intro{
+	position: relative;
+	overflow: hidden;
+	background-color:#f8f8f8;
+
+	&__control{
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+ 
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__prev,
+	&__next{
+		@extend %flex-center;
+		font-size: rem(50);
+	}
+
+	.swiper{
+		overflow: visible;
+			@media(max-width:$d6) {
+				margin: 0 -10px;
+			}
+	}
+
+
+
+}
+.intro-slide{
+	&__inner{
+		min-height: rem(400);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom center;
+	}
+}

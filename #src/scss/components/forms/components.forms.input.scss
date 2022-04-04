@@ -1,0 +1,28 @@
+//<Input >====================================================================================================
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0px 20px;
+
+	padding: rem(10) rem(5);
+	background-color: transparent;
+	
+	&:focus{
+		border-color: #000;
+	}
+	
+		&::placeholder {
+			color: #999999;
+			font-size: rem(18px);
+		}
+	
+}
+.textarea {
+	resize: none;
+	border: 1px solid #c3c3c3;
+	padding: rem(9) rem(16);
+	height: rem(130);
+}
+
+//</Input >====================================================================================================

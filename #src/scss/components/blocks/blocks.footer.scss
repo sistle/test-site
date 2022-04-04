@@ -1,0 +1,29 @@
+.footer {
+	background-color: #767676;
+	padding: rem(45) 0;
+	color: #fff;
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(14);
+		justify-content: space-between;
+	}
+	&__mail,
+	&__development{
+		@include interactive-effects(#fff,"color");
+	}
+	&__development{
+		font-size: rem(50);
+	}
+}
+.footer-nav{
+	&__item{
+		&:not(:last-child){
+			margin-bottom: rem(10);
+		}
+	}
+	&__link{
+		text-decoration: underline;
+				@include interactive-effects(#fff, "color");
+	}
+}
